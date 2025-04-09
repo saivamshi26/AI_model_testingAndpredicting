@@ -29,7 +29,7 @@ _, X_test, _, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
 
 model_path = r"C:\Users\saiva\OneDrive\Desktop\pragament\mnist-99-tensorflow2-default-v1\best_model.h5"  # Adjust if needed
 model = load_model(model_path)
-print("✅ Loaded MNIST model successfully.")
+print(" Loaded MNIST model successfully.")
 
 
 
