@@ -36,7 +36,7 @@ print(" Loaded MNIST model successfully.")
 predictions = model.predict(X_test)
 
 # Display 10 predictions
-print("\n🔍 Displaying predictions on A-Z characters using MNIST digit model:\n")
+print("\n Displaying predictions on A-Z characters using MNIST digit model:\n")
 
 for i in range(10):
     idx = random.randint(0, len(X_test)-1)
