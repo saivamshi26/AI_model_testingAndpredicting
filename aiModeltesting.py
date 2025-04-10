@@ -18,7 +18,7 @@ model_path = r"C:\Users\saiva\OneDrive\Desktop\pragament\mnist-99-tensorflow2-de
 model = load_model(model_path)
 print(" MNIST model loaded successfully.")
 try:
-    num_preds = int(input("🔢 How many predictions would you like to see? "))
+    num_preds = int(input("How many predictions would you like to see? "))
     num_preds = min(num_preds, len(X))  
 except ValueError:
     print(" Please enter a valid number.")
@@ -30,11 +30,11 @@ for idx in range(num_preds):
     prediction = model.predict(image.reshape(1, 28, 28, 1))
     predicted_digit = np.argmax(prediction)
 
-<<<<<<< HEAD
+
     plt.imshow(image, cmap='gray')
     plt.title(f"Actual: {y[idx]} | Predicted Digit: {predicted_digit}")
     plt.axis('off')
-=======
+
 predictions = model.predict(X_test)
 
 
@@ -50,5 +50,5 @@ for i in range(10):
     plt.imshow(img, cmap='gray')
     plt.title(f"Actual: {actual_char} | Predicted Digit: {predicted_digit}")
     plt.axis("off")
->>>>>>> d8a297952289624ee496640132b468060ebbcece
+
     plt.show()
