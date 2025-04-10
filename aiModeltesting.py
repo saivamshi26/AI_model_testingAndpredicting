@@ -16,13 +16,7 @@ X = X.reshape(-1, 28, 28)
 
 model_path = r"C:\Users\saiva\OneDrive\Desktop\pragament\mnist-99-tensorflow2-default-v1\best_model.h5"
 model = load_model(model_path)
-<<<<<<< HEAD
 print(" MNIST model loaded successfully.")
-=======
-print(" Loaded MNIST model successfully.")
->>>>>>> d8a297952289624ee496640132b468060ebbcece
-
-
 try:
     num_preds = int(input("🔢 How many predictions would you like to see? "))
     num_preds = min(num_preds, len(X))  
